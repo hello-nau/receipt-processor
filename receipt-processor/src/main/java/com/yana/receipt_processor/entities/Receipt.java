@@ -8,16 +8,16 @@ public class Receipt {
     private String retailer;
     private String purchaseDate;
     private String purchaseTime;
-    private List<Item> itemList;
-    private String totalPaid;
+    private List<Item> items;
+    private String total;
     private String id;
 
-    public Receipt(String retailer, String purchaseDate, String purchaseTime, List<Item> itemList, String totalPaid) {
+    public Receipt(String retailer, String purchaseDate, String purchaseTime, List<Item> items, String total) {
         this.retailer = retailer;
         this.purchaseDate = purchaseDate;
         this.purchaseTime = purchaseTime;
-        this.itemList = itemList;
-        this.totalPaid = totalPaid;
+        this.items = items;
+        this.total = total;
     }
 
     public String getRetailer() {
@@ -32,12 +32,12 @@ public class Receipt {
         return purchaseTime;
     }
 
-    public List<Item> getItemList() {
-        return itemList;
+    public List<Item> getItems() {
+        return items;
     }
 
-    public String getTotalPaid() {
-        return totalPaid;
+    public String getTotal() {
+        return total;
     }
 
     public String getId() {

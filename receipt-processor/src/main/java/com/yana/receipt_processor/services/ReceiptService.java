@@ -21,12 +21,12 @@ public class ReceiptService {
     public int calculatePoints(Receipt receipt) {
         int points = 0;
         points += receipt.getRetailer().replaceAll("[^a-zA-Z0-9]", "").length();
-        double total = Double.parseDouble(receipt.getTotalPaid());
+        double total = Double.parseDouble(receipt.getTotal());
         if (total % 1 == 0) points += 50;
         if (total % 0.25 == 0) points += 25;
-        points += (receipt.getItemList().size() / 2) * 5;
+        points += (receipt.getItems().size() / 2) * 5;
 
-        for (Item item : receipt.getItemList()) {
+        for (Item item : receipt.getItems()) {
             if (item.getShortDescription().trim().length() % 3 == 0) {
                 double itemPrice = Double.parseDouble(item.getPrice());
                 points += Math.ceil(itemPrice * 0.2);
