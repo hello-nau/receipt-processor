@@ -1,6 +1,8 @@
 package com.yana.receipt_processor.controllers;
 
 import com.yana.receipt_processor.entities.Receipt;
+import com.yana.receipt_processor.entities.responses.PointResponse;
+import com.yana.receipt_processor.entities.responses.ReceiptResponse;
 import com.yana.receipt_processor.services.ReceiptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
