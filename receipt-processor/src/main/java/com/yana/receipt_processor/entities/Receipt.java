@@ -10,6 +10,7 @@ public class Receipt {
     private String purchaseTime;
     private List<Item> itemList;
     private String totalPaid;
+    private String id;
 
     public Receipt(String retailer, String purchaseDate, String purchaseTime, List<Item> itemList, String totalPaid) {
         this.retailer = retailer;
@@ -37,5 +38,13 @@ public class Receipt {
 
     public String getTotalPaid() {
         return totalPaid;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
