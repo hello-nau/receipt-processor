@@ -1,3 +1,38 @@
+# Instructions for Running the Program with Docker
+
+If you don't have a Java environment installed, you can still run the program using Docker. Follow these steps:
+
+## Option 1: Using the .tar File 
+1. Load the Docker image from the .tar file you received:
+   
+     *docker load -i receipt-processor.tar*
+   
+3. Run the Docker container:
+
+    *docker run -d -p 8080:8080 --name receipt-processor yourusername/receipt-processor:latest*
+
+## Option 2: Cloning the Repository
+1. Clone the repository from GitHub and navigate into the project directory:
+
+    *git clone https://github.com/hello-nau/receipt-processor.git*
+
+2. Build the Docker image:
+
+    *docker build -t receipt-processor:latest .*
+
+3. Run the Docker container:
+
+    *docker run -d -p 8080:8080 --name receipt-processor receipt-processor:latest*
+
+## Verification:
+1. Check the Docker application to ensure the container is running without errors.
+2. Test different inputs using Postman or any HTTP client of your choice.
+   
+## Notes
+Ensure Docker is installed on your machine before proceeding.
+This program assumes valid input such as the total price.
+Extensive testing for all possible inputs is recommended before production use.
+
 # Receipt Processor
 
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
