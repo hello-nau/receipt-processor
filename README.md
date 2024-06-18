@@ -9,7 +9,7 @@ If you don't have a Java environment installed, you can still run the program us
    
 3. Run the Docker container:
 
-    *docker run -d -p 8080:8080 --name receipt-processor yourusername/receipt-processor:latest*
+    *docker run -d -p 8080:8080 --name receipt-processor receipt-processor:latest*
 
 ## Option 2: Cloning the Repository
 1. Clone the repository from GitHub and navigate into the project directory:
@@ -23,6 +23,14 @@ If you don't have a Java environment installed, you can still run the program us
 3. Run the Docker container:
 
     *docker run -d -p 8080:8080 --name receipt-processor receipt-processor:latest*
+
+## Option 3 if you have Java environment
+1. 1. Clone the repository from GitHub:
+
+    *git clone https://github.com/hello-nau/receipt-processor.git*
+
+2. Navigate to the cloned directory. You'll find that there are two folders named `receipt-processor`. 
+Open the **inner** `receipt-processor` folder as a project in your preferred IDE (such as IntelliJ IDEA, Eclipse, etc.).
 
 ## Verification:
 1. Check the Docker application to ensure the container is running without errors.
