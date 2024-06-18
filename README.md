@@ -24,8 +24,8 @@ If you don't have a Java environment installed, you can still run the program us
 
     *docker run -d -p 8080:8080 --name receipt-processor receipt-processor:latest*
 
-## Option 3 if you have Java environment
-1. 1. Clone the repository from GitHub:
+## Option 3: if you have Java environment
+1. Clone the repository from GitHub:
 
     *git clone https://github.com/hello-nau/receipt-processor.git*
 
